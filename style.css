@@ -1,0 +1,43 @@
+body{
+    /*background-color: rgb(105, 92, 92);*/
+    background-image: url(/img/fundoClaro.jpg);
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    height: 100vh; /* Define a altura do body para 100% da altura da tela */
+    margin: 0;
+}
+
+
+img{
+    width: 200px; /* Defina a largura desejada */
+    height: 200px; /* Defina a altura desejada */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 10px; /* Opcional: deixa as bordas arredondadas */
+    
+}
+
+h2{
+    color: rgb(69, 65, 65);
+    font-size: 250%;
+    
+}
+
+#c1{
+    width: 500px; /* Defina a largura desejada */
+    height:525px;
+    border-radius: 300px;
+}
+
+.p1{
+    text-align: center;
+    font-size:150%;
+    font-weight: 500;
+}
+.p2{
+    text-align: center;
+    font-size: 110%;
+    font-weight:bold;
+    width: 50%;
+    margin: 0 auto;
+}
