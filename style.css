@@ -1,43 +1,399 @@
-body{
-    /*background-color: rgb(105, 92, 92);*/
-    background-image: url(/img/fundoClaro.jpg);
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Impede a repetição da imagem */
-    height: 100vh; /* Define a altura do body para 100% da altura da tela */
-    margin: 0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1b1a1a;
+  background-image: url(/img/fundoClaro.jpg);
+  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+  height: 100vh; /* Define a altura do body para 100% da altura da tela */
+  margin: 0;
 }
 
-
-img{
-    width: 200px; /* Defina a largura desejada */
-    height: 200px; /* Defina a altura desejada */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-    border-radius: 10px; /* Opcional: deixa as bordas arredondadas */
-    
+.fundoCardapio {
+  background-image: url(./img/lancheApr.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
 }
 
-h2{
-    color: rgb(69, 65, 65);
-    font-size: 250%;
-    
+.fundoBebidas {
+  background-image: url(./img/fundoBebidas.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #675f5f;
+}
+.fundoDoce {
+  background-image: url(./img/fundoDoce1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #1b1a1a;
 }
 
-#c1{
-    width: 500px; /* Defina a largura desejada */
-    height:525px;
-    border-radius: 300px;
+/*botoes do carousel*/
+/* Mudar a cor dos ícones de navegação (setas) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #675f5f; /* Cor de fundo para as setas */
+  border-radius: 50%; /* Deixa as setas arredondadas */
+  width: 50px;
+  height: 50px;
 }
 
-.p1{
+/* Adicionar efeito de hover para melhorar a experiência */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #1b1a1a; /* Mudar a cor ao passar o mouse */
+  transition: background-color 0.3s ease;
+}
+
+/* Opcional: personalizar os indicadores (bolinhas) */
+.carousel-indicators [data-bs-target] {
+  background-color: #1b1a1a; /* Cor padrão das bolinhas */
+}
+
+.carousel-indicators [data-bs-target]:hover,
+.carousel-indicators .active {
+  background-color: #1b1a1a; /* Cor das bolinhas ativas ou ao passar o mouse */
+}
+#carouselExampleIndicators {
+  float: right; /*Move o carousel para a direita*/
+}
+/*Imagens do carousel*/
+#c1 {
+  width: 500px; /* Defina a largura desejada */
+  height: 500px;
+  border-radius: 15px;
+}
+
+.container {
+  width: 55%;
+  height: 55%;
+  position: relative;
+  left: 150px;
+}
+
+/*Box de texto ao lado do carousel*/
+.text-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -400px;
+  left: 70px;
+  width: 110%;
+  height: auto;
+}
+
+.text-box h2 {
+  position: relative;
+  left: -70px;
+  color: #d9534f;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.text-box p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+img {
+  width: 200px; /* Defina a largura desejada */
+  height: 200px; /* Defina a altura desejada */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 10px; /* Opcional: deixa as bordas arredondadas */
+}
+h2 {
+  border-radius: 15px;
+  margin: auto;
+  width: 80%;
+  color: rgb(69, 65, 65);
+  font-size: 250%;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.titleh2 {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  margin: 20px auto;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 250%;
+  opacity: 0.7;
+}
+
+.p1 {
+  color: #d9534f;
+  position: relative;
+  top: +15px;
+  text-align: center;
+  font-size: 180%;
+  font-weight: bold;
+}
+
+#demo {
+  position: relative;
+  top: -150px;
+  margin: auto;
+  width: 95%;
+  padding: auto;
+}
+
+.menuLanche {
+  text-align: center;
+}
+
+.tableLanches {
+  max-height: 80%;
+  min-height: 60vh;
+  width: 80%; /*ajusta o tamanho da tabela*/
+  margin: auto;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+.line {
+  border: none; /* Remove a borda padrão */
+  height: 2px; /* Define a altura da linha */
+  background-color: black; /* Define a cor da linha */
+  width: 45%; /* Define a largura da linha */
+  margin: 20px auto; /* Centraliza a linha */
+  border-radius: 15px;
+}
+
+td,
+tr {
+  color: aliceblue;
+  font-size: large;
+  padding-right: 15px;
+}
+.menuh2 {
+  color: aliceblue;
+  background-color: #1b1a1a;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+.menuh2Bebidas {
+  color: aliceblue;
+  background-color: black;
+  width: 45%; /*Tamanho*/
+  font-size: 250%;
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+th {
+  color: aliceblue;
+  font-weight: bold;
+  text-transform: uppercase; /* Texto em maiúsculo */
+  padding-right: 15px;
+}
+
+.menuBebidas {
+  text-align: center;
+}
+
+.tableBebidas {
+  max-height: 80%;
+  min-height: 65vh;
+  width: 45%; /*ajusta o tamanho da tabela*/
+  margin: auto;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+.menuSobremesas {
+  text-align: center;
+}
+
+.tableSobremesas {
+  max-height: 80%;
+  min-height: 60vh;
+  width: 80%; /*ajusta o tamanho da tabela*/
+  margin: auto;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+.card-title {
+  color: black;
+}
+
+a {
+  text-decoration: none; /*remove o sublinhado*/
+}
+
+.titleBoxVideo {
+  padding: 15px;
+  text-align: center;
+  width: 700px;
+  color: #d9534f;
+}
+
+.pVideo {
+  text-align: left;
+  position: relative;
+  top: -35px;
+  color: black;
+  margin: 10px;
+  width: 700px;
+  border-radius: 15px;
+}
+
+.textoVideo {
+  background-color: black;
+}
+
+.container2 {
+  background-color: white;
+  position: relative;
+  height: 320px;
+  width: 750px;
+  top: -150px;
+  left: 45px;
+  border-radius: 15px;
+}
+.videoBurguer {
+  position: relative;
+  height: 250px;
+  width: 1250px;
+  left: 790px;
+  top: -360px;
+  border-radius: 15px;
+}
+
+/*Responsividade em diversos*/
+
+/* Estilos gerais para dispositivos menores */
+@media (max-width: 768px) {
+  .navbar {
     text-align: center;
-    font-size:150%;
-    font-weight: 500;
-}
-.p2{
+  }
+  .navbar-brand {
+    margin-left: 0;
+  }
+
+  h2.titleh2 {
+    font-size: 1.8em;
+  }
+
+  .p1 {
+    font-size: 1.4em;
+  }
+  /* Tornando o carousel mais responsivo */
+  .container {
+    width: 100%;
+    height: auto;
+    left: 0;
+    padding: 10px;
+  }
+  #c1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .text-box h2 {
+    left: 0;
     text-align: center;
-    font-size: 110%;
-    font-weight:bold;
-    width: 50%;
-    margin: 0 auto;
+  }
+
+  /* Cards com lanches, bebidas e sobremesas */
+  #demo {
+    top: 0;
+    margin-top: 20px;
+  }
+
+  .col img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*Video e informações na parte inferior*/
+  .container2 {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    top: 0;
+  }
+
+  .videoBurguer {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
+  /*Ajuste geral de margens e espaçamentos*/
+  .pVideo,
+  .tittleBoxVideo {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+/*Para smartphones*/
+@media (max-width: 576px) {
+  h2.titleh2 {
+    font-size: 1.5em;
+  }
+
+  .p1 {
+    font-size: 1.2em;
+  }
+
+  /* Box de texto ao lado do carousel em uma coluna */
+  .text-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .text-box h2 {
+    font-size: 1.5em;
+  }
+
+  .container2,
+  .videoBurguer {
+    width: 100%;
+  }
+
+  /*Card do cardapio*/
+  .col {
+    margin-bottom: 20px;
+  }
+
+  /*Ajustando os botões ao tamanho do texto*/
+  button.btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /*Rendimensionando o video*/
+  .videoBurguer iframe {
+    height: 200px;
+  }
 }
