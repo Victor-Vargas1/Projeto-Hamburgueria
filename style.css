@@ -1,399 +1,784 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #1b1a1a;
-  background-image: url(/img/fundoClaro.jpg);
-  background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-  background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Impede a repetição da imagem */
-  height: 100vh; /* Define a altura do body para 100% da altura da tela */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Shadows+Into+Light&display=swap");
+/* CSS PAGINA HOME COMEÇA AQUI */
+
+/* Estilos gerais para todos os dispositivos */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.fundoCardapio {
-  background-image: url(./img/lancheApr.jpg);
+body {
+  background-image: linear-gradient(
+    rgba(29, 29, 29, 0.8),
+    rgba(29, 29, 29, 0.8)
+  ),
+  url(./img/fundoHalloween.jpg);
+}
+
+.conteudo-Home .conteudo-cima {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 950;
+  background-color: black;
+  color: rgb(248, 161, 0);
+  text-align: center;
+  margin: 20px auto;
+  width: 75%;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 2rem;
+  opacity: 0.7;
+  max-width: 70rem;
+}
+
+.sub-titulo {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 950;
+  color: rgb(248, 161, 0);
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.conteudo-carrousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.texto-home {
+  color: #494949;
+}
+
+.caixa-texto {
+  border-radius: 20px;
+  padding: 25px;
+  background-color: white;
+  font-size: 20px;
+  width: 50vw;
+  max-width: 700px;
+}
+
+.titulo-conteudo-esquerda {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 950;
+  color: rgb(248, 161, 0);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dropdown-menu{
+  font-family: "Oswald", sans-serif;
+}
+
+.icone-menu{
+  display: flex;
+  align-items: center;
+}
+
+.icone1{
+  margin-left: 8px;
+}
+
+.icone2{
+  margin-left: 11px;
+}
+
+.icone3{
+  margin-left: 12px;
+}
+
+.carousel-inner {
+  height: 320px;
+  width: 500px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.lanches, .bebidas, .sobremesas {
+  background-color: rgb(221, 218, 218);
+  width: 30%;
+  border-radius: 20px;
+  padding: 15px;
+  max-width: 400px;
+
+  h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 950;
+    font-size: 1.5rem;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #675f5f;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #675f5f;
+  }
+}
+
+.imagem1, .imagem2, .imagem3 {
+  border-radius: 15px;
+  height: 15em;
+  width: 100%;
+}
+
+.videoBurger{
+  border-radius: 20px;
+}
+
+.conteudo-imagem {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row;
+  padding: 35px;
+  justify-content: space-around;
+  background-color: rgb(248, 161, 0);
+}
+
+.rodape {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(248, 161, 0);
+  background-image: linear-gradient(
+    rgba(29, 29, 29, 0.8),
+    rgba(29, 29, 29, 0.8)
+  )
+}
+
+.rodape-texto {
+  background-color: rgb(221, 218, 218);
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  color: #675f5f;
+  margin-bottom: 25px;
+  max-width: 700px;
+
+  h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 950;
+    color: rgb(248, 161, 0);
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.col-lg-6 {
+  width: 30vw;
+  height: 22rem;
+}
+
+/* CSS PAGINA HOME É ATE AQUI */
+
+/* ------------------------------------------------------------------- */
+
+/* CSS DAS PAGINAS COMEÇA AQUI */
+
+.fundoLanches {
+  background-image: linear-gradient(
+      rgba(29, 29, 29, 0.8),
+      rgba(29, 29, 29, 0.8)
+    ),
+    url(./img/fundohamburguer.jpg);
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
   width: 100vw;
   height: 100%;
 }
 
 .fundoBebidas {
-  background-image: url(./img/fundoBebidas.jpg.jpg);
+  background-image: linear-gradient(
+    rgba(29, 29, 29, 0.8),
+    rgba(29, 29, 29, 0.8)
+  ),
+  url(./img/fundoBebidasOne.jpg);
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
   width: 100vw;
   height: 100%;
-  background-color: #675f5f;
 }
+
 .fundoDoce {
-  background-image: url(./img/fundoDoce1.jpg);
+  background-image: linear-gradient(
+      rgba(29, 29, 29, 0.8),
+      rgba(29, 29, 29, 0.8)
+    ),
+    url(./img/fundoDoce1.jpg);
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
   width: 100vw;
   height: 100%;
-  background-color: #1b1a1a;
 }
 
-/*botoes do carousel*/
-/* Mudar a cor dos ícones de navegação (setas) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #675f5f; /* Cor de fundo para as setas */
-  border-radius: 50%; /* Deixa as setas arredondadas */
-  width: 50px;
-  height: 50px;
-}
-
-/* Adicionar efeito de hover para melhorar a experiência */
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: #1b1a1a; /* Mudar a cor ao passar o mouse */
-  transition: background-color 0.3s ease;
-}
-
-/* Opcional: personalizar os indicadores (bolinhas) */
-.carousel-indicators [data-bs-target] {
-  background-color: #1b1a1a; /* Cor padrão das bolinhas */
-}
-
-.carousel-indicators [data-bs-target]:hover,
-.carousel-indicators .active {
-  background-color: #1b1a1a; /* Cor das bolinhas ativas ou ao passar o mouse */
-}
-#carouselExampleIndicators {
-  float: right; /*Move o carousel para a direita*/
-}
-/*Imagens do carousel*/
-#c1 {
-  width: 500px; /* Defina a largura desejada */
-  height: 500px;
-  border-radius: 15px;
-}
-
-.container {
-  width: 55%;
-  height: 55%;
-  position: relative;
-  left: 150px;
-}
-
-/*Box de texto ao lado do carousel*/
-.text-box {
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: -400px;
-  left: 70px;
-  width: 110%;
-  height: auto;
-}
-
-.text-box h2 {
-  position: relative;
-  left: -70px;
-  color: #d9534f;
-  font-size: 2em;
-  margin-bottom: 5px;
-}
-
-.text-box p {
-  font-size: 1.1em;
-  color: #555;
-  line-height: 1.6;
-}
-
-img {
-  width: 200px; /* Defina a largura desejada */
-  height: 200px; /* Defina a altura desejada */
-  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-  border-radius: 10px; /* Opcional: deixa as bordas arredondadas */
-}
-h2 {
-  border-radius: 15px;
-  margin: auto;
-  width: 80%;
-  color: rgb(69, 65, 65);
-  font-size: 250%;
-}
-
-h5 {
-  font-weight: bold;
-}
-
-.titleh2 {
-  background-color: black;
-  color: aliceblue;
-  text-align: center;
-  margin: 20px auto;
-  width: 100%;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 250%;
-  opacity: 0.7;
-}
-
-.p1 {
-  color: #d9534f;
-  position: relative;
-  top: +15px;
-  text-align: center;
-  font-size: 180%;
-  font-weight: bold;
-}
-
-#demo {
-  position: relative;
-  top: -150px;
-  margin: auto;
-  width: 95%;
-  padding: auto;
-}
-
-.menuLanche {
-  text-align: center;
-}
-
-.tableLanches {
-  max-height: 80%;
-  min-height: 60vh;
-  width: 80%; /*ajusta o tamanho da tabela*/
-  margin: auto;
-  background-color: black;
-  opacity: 0.8;
-  border-radius: 25px;
-}
-
-.line {
-  border: none; /* Remove a borda padrão */
-  height: 2px; /* Define a altura da linha */
-  background-color: black; /* Define a cor da linha */
-  width: 45%; /* Define a largura da linha */
-  margin: 20px auto; /* Centraliza a linha */
-  border-radius: 15px;
-}
-
-td,
-tr {
-  color: aliceblue;
-  font-size: large;
-  padding-right: 15px;
-}
-.menuh2 {
-  color: aliceblue;
-  background-color: #1b1a1a;
-  opacity: 0.8;
-  padding: 10px;
-}
-
-.menuh2Bebidas {
-  color: aliceblue;
-  background-color: black;
-  width: 45%; /*Tamanho*/
+.menuh2Lanches,
+.menuh2Bebidas,
+.menuh2Sobremesas {
+  color: rgb(248, 161, 0);
+  background-color: rgb(20, 19, 19);
+  width: 50vw;
   font-size: 250%;
   padding: 10px;
   border-radius: 15px;
   opacity: 0.8;
-}
-
-th {
-  color: aliceblue;
-  font-weight: bold;
-  text-transform: uppercase; /* Texto em maiúsculo */
-  padding-right: 15px;
-}
-
-.menuBebidas {
-  text-align: center;
-}
-
-.tableBebidas {
-  max-height: 80%;
-  min-height: 65vh;
-  width: 45%; /*ajusta o tamanho da tabela*/
-  margin: auto;
-  background-color: black;
-  opacity: 0.8;
-  border-radius: 25px;
-}
-
-.menuSobremesas {
-  text-align: center;
+  max-width: 50rem;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 950;
 }
 
 .tableSobremesas {
-  max-height: 80%;
-  min-height: 60vh;
-  width: 80%; /*ajusta o tamanho da tabela*/
+  padding: 50px;
   margin: auto;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   opacity: 0.8;
-  border-radius: 25px;
-}
-.card-title {
-  color: black;
-}
-
-a {
-  text-decoration: none; /*remove o sublinhado*/
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  max-width: 70rem;
 }
 
-.titleBoxVideo {
-  padding: 15px;
+.tableLanches{
+  padding: 50px;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  max-width: 70rem;
+}
+
+.tableBebidas{
+  padding: 50px;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  max-width: 70rem;
+}
+
+.lanches-grid{
+  display: grid;
+  /*grid-template-columns: repeat(4, 2fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.bebidas-grid{
+  display: grid;
+  /*grid-template-columns: repeat(4, 2fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.sobremesas-grid{
+  display: grid;
+  /*grid-template-columns: repeat(4, 2fr);*/
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 30px;
+}
+
+.lanches-card, .bebidas-card, .sobremesa-card {
+  background-color: #181818;
+  padding: 10px;
+  border-radius: 8px;
   text-align: center;
-  width: 700px;
-  color: #d9534f;
-}
-
-.pVideo {
-  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: relative;
-  top: -35px;
-  color: black;
-  margin: 10px;
-  width: 700px;
+  overflow: hidden;
+}
+
+.lanches-card h3, .bebidas-card h3, .sobremesa-card h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 900;
+}
+
+.bebidas-card img{
+  width: 100%;
+  max-height: 75%;
   border-radius: 15px;
+  transition: opacity 0.3s ease-in-out; /* Transição suave ao esconder a imagem */
 }
 
-.textoVideo {
-  background-color: black;
-}
-
-.container2 {
-  background-color: white;
-  position: relative;
-  height: 320px;
-  width: 750px;
-  top: -150px;
-  left: 45px;
+.sobremesa-card img{
+  width: 100%;
+  max-height: 70%;
   border-radius: 15px;
+  transition: opacity 0.3s ease-in-out; /* Transição suave ao esconder a imagem */
 }
-.videoBurguer {
-  position: relative;
-  height: 250px;
-  width: 1250px;
-  left: 790px;
-  top: -360px;
+
+.lanches-card img{
+  width: 100%;
+  max-height: 60%;
   border-radius: 15px;
+  transition: opacity 0.3s ease-in-out; /* Transição suave ao esconder a imagem */
 }
 
-/*Responsividade em diversos*/
 
-/* Estilos gerais para dispositivos menores */
-@media (max-width: 768px) {
-  .navbar {
-    text-align: center;
-  }
-  .navbar-brand {
-    margin-left: 0;
-  }
+/* ---------------------ESSA PARTE É A DOS INGREDIENTES COM HOVER --------------------- */
 
-  h2.titleh2 {
-    font-size: 1.8em;
-  }
+.ingredientes {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
 
-  .p1 {
-    font-size: 1.4em;
-  }
-  /* Tornando o carousel mais responsivo */
-  .container {
-    width: 100%;
-    height: auto;
-    left: 0;
-    padding: 10px;
-  }
-  #c1 {
-    width: 100%;
-    height: auto;
-  }
+.lanches-card:hover img,
+.bebidas-card:hover img,
+.sobremesa-card:hover img {
+  opacity: 0; /* Esconde a imagem quando o hover acontece */
+}
 
-  .text-box {
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-  }
+.lanches-card:hover .ingredientes,
+.bebidas-card:hover .ingredientes,
+.sobremesa-card:hover .ingredientes {
+  opacity: 1;
+  visibility: visible; /* Mostra os ingredientes quando o hover acontece */
+}
 
-  .text-box h2 {
-    left: 0;
-    text-align: center;
-  }
+.menuSobremesas, 
+.menuBebidas, 
+.menuLancheHamburguer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
-  /* Cards com lanches, bebidas e sobremesas */
-  #demo {
-    top: 0;
-    margin-top: 20px;
-  }
+/* ------------------------------------------------------------------- */
 
-  .col img {
-    width: 100%;
-    height: auto;
-  }
+/* CSS DA PAGINA DE SUGESTAO COMEÇA AQUI */
 
-  /*Video e informações na parte inferior*/
-  .container2 {
-    width: 90%;
-    height: auto;
-    margin: auto;
-    top: 0;
-  }
+.fundo-opiniao{
+  background-image: linear-gradient(
+      rgba(29, 29, 29, 0.8),
+      rgba(29, 29, 29, 0.8)
+    ),
+    url(./img/fundohamburguer.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100%;
 
-  .videoBurguer {
-    width: 100%;
-    height: auto;
-    left: 0;
-    top: 0;
-  }
+}
+.Sugestao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  /*Ajuste geral de margens e espaçamentos*/
-  .pVideo,
-  .tittleBoxVideo {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
+.tittleSugestao {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 950;
+  color: rgb(248, 161, 0);
+  text-align: center;
+  margin: auto;
+  font-size: 35px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px; /* Limita o tamanho máximo da caixa do formulário */
+  padding: 20px;
+  background-color: white; /* Fundo branco */
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: auto;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+*/ .mb-3 {
+  margin-bottom: 10px;
+}
+
+#exampleCheck1 {
+  border: 1px solid;
+  opacity: 0.5;
+}
+/* Estiliza o campo de texto */
+.form-control1,
+.form-control2 {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Caixa de texto para sugestões com ajuste para quebra de linha */
+textarea.form-control2 {
+  resize: vertical; /* redimensionar a altura da caixa de texto */
+  white-space: pre-wrap; /* quebra de linha dentro do textarea */
+}
+
+/* Estilo do botão */
+.btn-primary {
+  background-color: rgb(255, 188, 63);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgb(248, 161, 0);
+}
+
+
+/*--------------------------- MORCEGOS -----------------------------*/
+
+.bat{
+  background: url('img/morcegogif.gif') no-repeat center/contain;
+}
+
+/* Animação de morcegos voando para o Halloween */
+@keyframes fly-bat {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(50vw) translateY(-30vh) rotate(45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(100vw) translateY(0) rotate(0deg);
+    opacity: 0;
   }
 }
 
-/*Para smartphones*/
-@media (max-width: 576px) {
-  h2.titleh2 {
-    font-size: 1.5em;
+.bat {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url('img/morcegogif.gif') no-repeat center/contain;
+  animation: fly-bat 12s linear infinite;
+}
+
+/* Ajuste a animação de múltiplos morcegos */
+.bat:nth-child(1) {
+  top: 10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.bat:nth-child(2) {
+  top: 30%;
+  left: -15%;
+  animation-delay: 2s;
+  animation-duration: 10s;
+}
+
+.bat:nth-child(3) {
+  top: 50%;
+  left: -20%;
+  animation-delay: 4s;
+  animation-duration: 12s;
+}
+
+.bat:nth-child(4) {
+  top: 70%;
+  left: -25%;
+  animation-delay: 6s;
+  animation-duration: 14s;
+}
+
+.bat:nth-child(5) {
+  top: 85%;
+  left: -30%;
+  animation-delay: 8s;
+  animation-duration: 16s;
+}
+
+/* ------------------------------ ARANHA --------------------------------*/
+
+
+/* Animação simples para o GIF da aranha descer do topo */
+@keyframes spider-drop {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 35px;
+    opacity: 1;
+  }
+}
+
+.spider {
+  position: absolute;
+  top: -100px;
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  background: url('img/aranhaGif copy.gif') no-repeat center/contain;
+  animation: spider-drop 10s ease-out forwards;
+  z-index: 1000;
+}
+
+/* CSS DA PAGINA DE SUGESTAO TERMINA AQUI */
+
+/* ------------------------------------------------------------------- */
+
+/* MEDIA DA PAGINA HOME COMEÇA AQUI */
+
+@media (max-width: 1024px) {
+  .titulo {
+    font-size: 2rem;
   }
 
-  .p1 {
-    font-size: 1.2em;
+  .sub-titulo {
+    font-size: 1.5rem;
   }
 
-  /* Box de texto ao lado do carousel em uma coluna */
-  .text-box {
+  .caixa-texto {
+    width: 70vw;
+    font-size: 18px;
+  }
+
+  .conteudo-carrousel {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-inner {
     width: 100%;
-    padding: 15px;
+    height: auto;
   }
 
-  .text-box h2 {
-    font-size: 1.5em;
-  }
-
-  .container2,
-  .videoBurguer {
-    width: 100%;
-  }
-
-  /*Card do cardapio*/
-  .col {
+  .lanches,
+  .bebidas,
+  .sobremesas {
     margin-bottom: 20px;
+
+    h3 {
+      font-size: 1.5em;
+      text-align: center;
+      font-weight: bold;
+      color: #675f5f;
+    }
+
+    img {
+      height: 20vh;
+    }
+
+    p {
+      display: none;
+    }
   }
 
-  /*Ajustando os botões ao tamanho do texto*/
-  button.btn {
-    width: 100%;
-    margin-top: 10px;
+  .rodape-texto {
+    display: none;
   }
 
-  /*Rendimensionando o video*/
-  .videoBurguer iframe {
-    height: 200px;
+  .col-lg-6 {
+    width: 100vw;
+    height: auto;
   }
 }
+
+@media (max-width: 700px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .sub-titulo {
+    font-size: 1.2rem;
+  }
+
+  .caixa-texto {
+    display: none;
+  }
+
+  .conteudo-carrousel {
+    flex-direction: column;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    height: auto;
+  }
+
+  .lanches,
+  .bebidas,
+  .sobremesas {
+    width: 65%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .conteudo-imagem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rodape-texto {
+    display: none;
+  }
+
+  .col-lg-6 {
+    width: 100vw;
+    height: auto;
+  }
+}
+/* MEDIA PAGINA HOME É ATE AQUI */
+
+/* ------------------------------------------------------------------- */
+
+/* MEDIA PAGINA SOBREMESAS COMEÇA AQUI */
+
+@media (max-width: 1024px) {
+  .sub-titulo-sobremesas {
+    font-size: 30px;
+  }
+
+  .tableSobremesas {
+    width: 80vw;
+  }
+
+  .menuh2Sobremesas {
+    font-size: 30px;
+  }
+
+  .texto-sobremesa {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .tableSobremesas {
+    width: 90vw;
+  }
+}
+/* MEDIA PAGINA SOBREMESAS TERMINA AQUI */
+
+/* ------------------------------------------------------------------- */
+
+/* MEDIA DA PAGINA DE BEBIDAS COMEÇA AQUI  */
+
+@media (max-width: 1024px) {
+  .sub-titulo-bebidas {
+    font-size: 20px;
+  }
+
+  .menuh2Bebidas {
+    font-size: 30px;
+  }
+
+  .tableBebidas{
+    width: 80vw;
+  }
+
+  .texto-bebidas {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 510px) {
+  .sub-titulo-bebidas {
+    font-size: 20px;
+  }
+
+  .menuBebidas {
+    font-size: 30px;
+  }
+
+  .texto-bebidas {
+    font-size: 12px;
+  }
+}
+
+/* MEDIA DA PAGINA DE BEBIDAS TERMINA AQUI  */
+
+/* ------------------------------------------------------------------- */
+
+/* MEDIA DA PAGINA DE HAMBURGUER COMEÇA AQUI  */
+
+@media (max-width: 1024px) {
+  .sub-ingredientes {
+    display: none;
+  }
+
+  .texto-lanches {
+    font-size: 20px;
+  }
+
+  .tableLanches{
+    width: 80vw;
+  }
+
+  .menuh2Hamburguer {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 470px) {
+  .menuh2Hamburguer {
+    font-size: 20px;
+  }
+
+  .sub-titulo-lanches {
+    font-size: 25px;
+  }
+
+  .texto-lanches {
+    font-size: 18;
+  }
+}
+
+/* MEDIA DA PAGINA DE HAMBURGUER TERMINA AQUI  */
+
+  /* Mensagens de erro Sugestoes */

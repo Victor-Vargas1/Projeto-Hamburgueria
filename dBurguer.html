@@ -1,195 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D.Burguer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.Burguer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+    </script>
+    <!--icons hamburger-->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-  <nav class="navbar col-12 pisition-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
-    <!--Col-12 igual a divisão da tela uma tela tem 12 colunas por tanto a barra vai pegar a tela por inteira -->
+    <div class="conteudo-Home">
+        <div class="conteudo-cima">
+            <div>
+                <nav class="navbar col-12 pisition-fixed navbar-expand-lg navbar-dark bg-dark" style="z-index: 999;">
+                    <!--Col-12 igual a divisão da tela uma tela tem 12 colunas por tanto a barra vai pegar a tela por inteira -->
+                    <div class="container-fluid col-11 m-auto">
+                        <a class="navbar-brand" href="dBurguer.html"><strong>D.Burguer</strong></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="dBurguer.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+                                        <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5"/>
+                                      </svg> Pagina inicial</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                                          </svg>
+                                        Menu
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <div class="icone-menu">
 
-    <div class="container-fluid col-11 m-auto">
-      <a class="navbar-brand" href="dBurguer.html"><strong>D.Burguer</strong></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="dBurguer.html">Pagina de inicio</a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Menu
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="lanches.html">Lanches</a></li>
-              <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
-              <li><a class="dropdown-item" href="sobremesas.html">Sobremesas</a></li>
-            </ul>
-          </li>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href=""></a> <!--Colocar o link da proxima pagina-->
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true"></a> <!--Guia-->
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Digite oque deseja..." abel="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <br>
+                                                <svg class="icone1" fill="#000000" width="27px" height="27px" viewBox="-10 -10 120.00 120.00" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke="#000000" stroke-width="0.001" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.2"></g><g id="SVGRepo_iconCarrier"> <g id="_x31_"></g> <g id="_x32_"></g> <g id="_x33_"></g> <g id="_x34_"> <path d="M72.8,80.7H26.6c-5.9,0-10.7-4.8-10.7-10.7v-6c0-0.8,0.7-1.5,1.5-1.5h0.1c0.6,0,1.2,0.4,1.4,1c0.4,1.3,3.2,2.8,7,2.8 c3.3,0,5.6-1.1,6.6-2.1c0.9-1.1,2.3-1.7,3.9-1.7h2.9c1.5,0,2.9,0.6,3.9,1.7c0.9,1.1,3.3,2.1,6.6,2.1c3.2,0,5.6-1.1,6.6-2.1 c0.9-1.1,2.3-1.7,3.9-1.7h2.4c1.5,0,2.9,0.6,3.9,1.7c0.9,1.1,3.3,2.1,6.6,2.1c3.7,0,6.5-1.4,6.9-2.8c0.2-0.6,0.8-1,1.4-1H82 c0.8,0,1.5,0.7,1.5,1.5v6C83.5,75.9,78.7,80.7,72.8,80.7z M18.9,67.6V70c0,4.2,3.4,7.7,7.7,7.7h46.2c4.2,0,7.7-3.4,7.7-7.7v-2.8 c-1.8,1.3-4.5,2-7.5,2c-3.7,0-7.1-1.2-8.8-3.2c-0.3-0.4-0.9-0.6-1.6-0.6h-2.4c-0.6,0-1.2,0.2-1.6,0.6c-1.7,2-5.1,3.2-8.8,3.2 c-3.7,0-7.1-1.2-8.8-3.2c-0.3-0.4-0.9-0.6-1.6-0.6h-2.9c-0.6,0-1.2,0.2-1.6,0.6c-1.7,2-5.1,3.2-8.8,3.2 C23.2,69.3,20.8,68.7,18.9,67.6z M80.3,57.5H19.9c-3.9,0-7.1-3.3-7.1-7.4c0-2,0.7-3.8,2-5.2c1.4-1.4,3.1-2.2,5-2.2h41 c0.5,0,1,0.3,1.3,0.7l2.1,3.5l4.6-3.9c0.3-0.2,0.6-0.4,1-0.4h10.5c3.9,0,7.1,3.3,7.1,7.4c0,2-0.7,3.8-2,5.2 C84,56.7,82.2,57.5,80.3,57.5z M19.9,45.6c-1.1,0-2.1,0.4-2.9,1.3c-0.8,0.8-1.2,2-1.2,3.2c0,2.4,1.8,4.4,4.1,4.4h60.4 c1.1,0,2.1-0.4,2.9-1.3c0.8-0.8,1.2-2,1.2-3.2c0-2.4-1.8-4.4-4.1-4.4h-9.9l-5.5,4.7c-0.3,0.3-0.8,0.4-1.2,0.3 c-0.4-0.1-0.8-0.3-1-0.7L60,45.6H19.9z M63.9,50.7c-0.1,0-0.2,0-0.2,0c-0.4-0.1-0.8-0.3-1-0.7L60,45.6H20.1c-0.8,0-1.5-0.7-1.5-1.5 v-6.8c0-0.8,0.7-1.5,1.5-1.5h59.3c0.8,0,1.5,0.7,1.5,1.5v6.8c0,0.8-0.7,1.5-1.5,1.5h-9l-5.5,4.7C64.6,50.6,64.3,50.7,63.9,50.7z M21.6,42.6h39.2c0.5,0,1,0.3,1.3,0.7l2.1,3.5l4.6-3.9c0.3-0.2,0.6-0.4,1-0.4h8v-3.8H21.6V42.6z M61.9,41.3 M73,69.3 c-4.2,0-7.8-1.5-9.3-3.8H59c-1.5,2.3-5.1,3.8-9.3,3.8c-4.2,0-7.8-1.5-9.3-3.8h-5.2c-1.5,2.3-5.1,3.8-9.3,3.8c-4.4,0-8.1-1.6-9.4-4 c-2.3-0.7-3.9-2.8-3.9-5.2c0-2.5,1.8-4.7,4.2-5.3c0.2-0.1,0.4-0.1,0.6-0.1H82c3,0,5.4,2.4,5.4,5.4c0,2.9-2.3,5.3-5.1,5.4 C80.8,67.8,77.2,69.3,73,69.3z M58.1,62.5h6.5c0.6,0,1.2,0.4,1.4,1c0.4,1.3,3.2,2.8,7,2.8c3.7,0,6.5-1.4,6.9-2.8 c0.2-0.6,0.8-1,1.4-1H82c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4H17.8c-0.1,0-0.1,0-0.2,0c-1.2,0.2-2.1,1.2-2.1,2.4 s0.9,2.2,2.1,2.4c0.2,0,0.3,0.1,0.4,0.1c0.4,0.2,0.8,0.5,0.9,0.9c0.4,1.3,3.2,2.8,7,2.8c3.7,0,6.5-1.4,6.9-2.8c0.2-0.6,0.8-1,1.4-1 h7c0.6,0,1.2,0.4,1.4,1c0.4,1.3,3.2,2.8,6.9,2.8c3.7,0,6.5-1.4,6.9-2.8C56.9,62.9,57.4,62.5,58.1,62.5z M82,38.9H17.4 c-0.8,0-1.5-0.7-1.5-1.5v-1.8c0-9,7.3-16.3,16.3-16.3h34.9c9,0,16.3,7.3,16.3,16.3v1.8C83.5,38.2,82.8,38.9,82,38.9z M18.9,35.9 h61.6v-0.3c0-7.3-6-13.3-13.3-13.3H32.3c-7.3,0-13.3,6-13.3,13.3V35.9z M31.6,31.4l3.8-3.8c0.6-0.6,0.6-1.5,0-2.1 c-0.6-0.6-1.5-0.6-2.1,0l-3.8,3.8c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4C30.9,31.8,31.3,31.6,31.6,31.4z M48.9,31.4 l3.8-3.8c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.8,3.8c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4 C48.2,31.8,48.6,31.6,48.9,31.4z M65.6,31.4l3.8-3.8c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.8,3.8 c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4C64.9,31.8,65.3,31.6,65.6,31.4z"></path> </g> <g id="_x35_"></g> <g id="_x36_"></g> <g id="_x37_"></g> <g id="_x38_"></g> <g id="_x39_"></g> <g id="_x31_0"></g> <g id="_x31_1"></g> <g id="_x31_2"></g> <g id="_x31_3"></g> <g id="_x31_4"></g> <g id="_x31_5"></g> <g id="_x31_6"></g> <g id="_x31_7"></g> <g id="_x31_8"></g> <g id="_x31_9"></g> <g id="_x32_0"></g> <g id="_x32_1"></g> <g id="_x32_2"></g> <g id="_x32_3"></g> <g id="_x32_4"></g> </g></svg>
+                                                
+                                                <li><a class="dropdown-item" href="lanches.html">Hambúrgueres</a></li>
+                                            </div>
+                                            <div class="icone-menu">
 
-  <div class="col-11 m-auto">
-    <h2 class="titleh2"><strong>D.Burguer</strong></h2>
-    <p class="p1">O melhor lanche para saciar sua fome você encontra aqui! </p>
-  </div>
-  <br>
+                                                <svg class="icone2" width="23px" height="23px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title></title> <g id="can"> <ellipse cx="32" cy="8" rx="14" ry="5" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></ellipse> <path d="M41,8c0,1.1-1.36,2-3,2a14.66,14.66,0,0,1-4.38-1.1,1,1,0,0,1,0-1.8A14.66,14.66,0,0,1,38,6C39.64,6,41,6.9,41,8Z"></path> <path d="M18,8V9A2,2,0,0,1,17,10.76a1.92,1.92,0,0,0-.95,1.7V52.54a1.92,1.92,0,0,0,.95,1.7A2,2,0,0,1,18,56c0,2.76,6.27,5,14,5s14-2.24,14-5a2,2,0,0,1,1-1.76,1.92,1.92,0,0,0,1-1.7V12.46a1.92,1.92,0,0,0-1-1.7A2,2,0,0,1,46,9V8" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></path> <path d="M48,13.4C44.35,15.59,38.54,17,32,17s-12.35-1.41-16-3.6" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></path> <path d="M16,26.69A18.69,18.69,0,0,0,25.33,29C34,29,34,25,42.67,25a18.48,18.48,0,0,1,5.33.68" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></path> <path d="M16,47.69A18.69,18.69,0,0,0,25.33,50C34,50,34,46,42.67,46a18.48,18.48,0,0,1,5.33.68" style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"></path> </g> </g></svg>
 
-  <!--Carousel-->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-8"> <!-- Movendo o carousel para a direita -->
-        <div id="carouselExampleIndicators" class="carousel slide col-13">
-          <div class="carousel-indicators m-auto">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner m-auto">
-            <div class="carousel-item active">
-              <img id="c1" src="/img/lanche1.jpg" class="d-block" alt="img1">
+                                                <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                                            </div>
+                                            <div class="icone-menu">
+
+                                                <svg class="icone3" width="23px" height="23px" viewBox="0 0 480.34 480.34" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:#173156;}</style> </defs> <title></title> <g data-name="Capa 2" id="Capa_2"> <g id="Outline"> <g id="Cupcake"> <path class="cls-1" d="M402.65,242.62a55.07,55.07,0,0,0-55.07-55.07h-6A55.05,55.05,0,0,0,301.84,94.4H297c-2.17-13-9.55-22.37-22-28.07-13.6-6.22-31.9-7-46.33-7A31.26,31.26,0,0,1,207.78,52c-4.49-4-7.16-9.14-7.16-13.86,0-11.26,4.83-19.65,7-20.92a8.5,8.5,0,0,0,.2-17c-2.46-.18-60.63-3.88-88.53,30.25C106.06,46.62,102,68.1,107.22,94.4h-6.41A55.08,55.08,0,0,0,61,187.55h-6a55.07,55.07,0,0,0-7.8,109.59L85.82,473.66a8.51,8.51,0,0,0,8.31,6.68H308.52a8.51,8.51,0,0,0,8.31-6.68l38.55-176.53A55.15,55.15,0,0,0,402.65,242.62ZM242.57,463.34l10.36-165.65H294L273.28,463.34Zm-113.2,0L108.65,297.69h41.07l10.36,165.65Zm27.36-165.65h41.1V463.34H167.09Zm48.1,0h41.09L235.56,463.34H204.83Zm-140,0H101.6l20.72,165.65H101ZM301.68,463.34H280.33l20.72-165.65h36.81Zm46.09-182.65H54.87a38.07,38.07,0,0,1,.2-76.14H184.92a8.5,8.5,0,1,0,0-17H100.81a38.08,38.08,0,0,1,0-76.15H116a8.17,8.17,0,0,0,2.1.27,8.86,8.86,0,0,0,2.09-.26,8.5,8.5,0,0,0,6.15-10.33l-.05-.2s0-.09,0-.14,0-.07,0-.11c-7.12-25.61-5-45.59,6.23-59.38,13.58-16.65,38-22,55.07-23.57a56.72,56.72,0,0,0-3.86,20.41c0,9.66,4.7,19.36,12.9,26.6A48.25,48.25,0,0,0,228.6,76.31c35.25,0,47.57,6.74,51,18.09H227.66a8.5,8.5,0,0,0,0,17h74.18a38.08,38.08,0,0,1,0,76.15,8.5,8.5,0,0,0,0,17h45.74a38.07,38.07,0,0,1,.19,76.14Z"></path> <path class="cls-1" d="M240.12,230a15.72,15.72,0,1,0,15.71,15.72A15.74,15.74,0,0,0,240.12,230Zm0,24.44a8.72,8.72,0,1,1,8.71-8.72A8.73,8.73,0,0,1,240.12,254.48Z"></path> <path class="cls-1" d="M73.29,229.1a10.16,10.16,0,1,0-10.16,10.16A10.17,10.17,0,0,0,73.29,229.1Zm-10.16,3.16a3.16,3.16,0,1,1,3.16-3.16A3.15,3.15,0,0,1,63.13,232.26Z"></path> <path class="cls-1" d="M350.08,218.94a10.16,10.16,0,1,0,10.17,10.16A10.17,10.17,0,0,0,350.08,218.94Zm0,13.32a3.16,3.16,0,1,1,3.17-3.16A3.16,3.16,0,0,1,350.08,232.26Z"></path> <path class="cls-1" d="M147.18,129a11.28,11.28,0,1,0,11.28,11.28A11.29,11.29,0,0,0,147.18,129Zm0,15.55a4.28,4.28,0,1,1,4.28-4.27A4.28,4.28,0,0,1,147.18,144.51Z"></path> <path class="cls-1" d="M164.21,57.13a11.28,11.28,0,1,0,11.28,11.28A11.28,11.28,0,0,0,164.21,57.13Zm0,15.55a4.28,4.28,0,1,1,4.28-4.27A4.27,4.27,0,0,1,164.21,72.68Z"></path> <path class="cls-1" d="M262,142.66a12.39,12.39,0,1,0,12.39,12.39A12.41,12.41,0,0,0,262,142.66Zm0,17.77a5.39,5.39,0,1,1,5.39-5.38A5.39,5.39,0,0,1,262,160.43Z"></path> <path class="cls-1" d="M134.17,252.91a11.28,11.28,0,1,0,11.27,11.27A11.28,11.28,0,0,0,134.17,252.91Zm0,15.55a4.28,4.28,0,1,1,4.27-4.28A4.28,4.28,0,0,1,134.17,268.46Z"></path> <path class="cls-1" d="M167.47,220.83a3.5,3.5,0,0,0-4.88.82,9.52,9.52,0,0,1-13.28,2.24,3.5,3.5,0,1,0-4.06,5.7,16.54,16.54,0,0,0,23.05-3.88A3.5,3.5,0,0,0,167.47,220.83Z"></path> <path class="cls-1" d="M311.52,250.61a3.5,3.5,0,0,0-4.12,5.66,9.53,9.53,0,0,1,2.09,13.3,3.5,3.5,0,0,0,5.66,4.12A16.55,16.55,0,0,0,311.52,250.61Z"></path> <path class="cls-1" d="M234.81,192.48a3.5,3.5,0,0,0,.34-7,9.53,9.53,0,0,1-8.52-10.43,3.5,3.5,0,0,0-7-.7,16.54,16.54,0,0,0,14.79,18.09A2.17,2.17,0,0,0,234.81,192.48Z"></path> <path class="cls-1" d="M109,147.56a16.5,16.5,0,0,0-22.35,6.79,3.51,3.51,0,0,0,1.44,4.74,3.44,3.44,0,0,0,1.64.41,3.5,3.5,0,0,0,3.09-1.85,9.52,9.52,0,0,1,12.89-3.92,3.5,3.5,0,1,0,3.29-6.17Z"></path> <path class="cls-1" d="M183.65,101.62a3.5,3.5,0,1,0-2.22,6.64,9.53,9.53,0,0,1,6,12.06,3.51,3.51,0,0,0,2.21,4.43,3.58,3.58,0,0,0,1.11.18,3.49,3.49,0,0,0,3.32-2.39A16.54,16.54,0,0,0,183.65,101.62Z"></path> <path class="cls-1" d="M305.32,134.35A9.53,9.53,0,0,1,314,144.67a3.5,3.5,0,0,0,3.18,3.79h.31a3.49,3.49,0,0,0,3.48-3.19,16.53,16.53,0,0,0-15-17.9,3.5,3.5,0,1,0-.61,7Z"></path> <path class="cls-1" d="M84.56,253.13a16.53,16.53,0,0,0-17.83,15.11,3.5,3.5,0,0,0,3.2,3.77h.3a3.49,3.49,0,0,0,3.48-3.21A9.51,9.51,0,0,1,84,260.11a3.5,3.5,0,0,0,.58-7Z"></path> </g> </g> </g> </g></svg>
+
+                                                <li><a class="dropdown-item" href="sobremesas.html">Sobremesas</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="opiniao.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                        <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                                      </svg> Sugestão</a> <!--Colocar o link da proxima pagina-->
+                                </li>
+                            </ul>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="carousel-item">
-              <img id="c1" src="/img/lanche2.jpg" class="d-block" alt="img2">
+            
+            <div>
+                <div>
+                    <h2 class="titulo"><strong>D.Burguer</strong></h2>
+                </div>
+                <div>
+                    <p class="sub-titulo">O melhor lanche para saciar sua fome você encontra aqui! </p>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img id="c1" src="/img/lanche3.jpg" class="d-block" alt="img3">
+            
+            <div class="conteudo-carrousel">
+                <div class="caixa-texto">
+                    <p class="titulo-conteudo-esquerda">Os Melhores Lanches</p>
+                    <hr class="linha">
+                    <p class="texto-home">
+                        No D.Burguer, cada combo é pensado para surpreender seu paladar, com hambúrgueres artesanais, bebidas refrescantes e sobremesas irresistíveis. Junte-se a nós e leve essa experiência para sua cidade, tornando-se parte da família D.Burguer!
+                        <br>
+                        <br>
+                        Faça parte da família D.Burguer!
+                        <br>
+                    </p>
+                </div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="/img/lanche1.jpg" alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/lanches/dBurguerDeluxe.jpg" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/img/burger3.avif" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
             </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </div> 
+        <div class="conteudo-baixo">
+            <div class="conteudo-imagem">
+                <div class="lanches">
+                    <a href="/lanches.html"><img class="imagem1" src="/img/lanche3.jpg" alt="Lanches Disponiveis"></a>
+                    <h3 class="titulo-opcao">Tipos de Lanches</h3>
+                    <p class="texto-imagens">Descubra o sabor irresistível do D.Burguer e transforme sua fome em prazer com lanches
+                        que fazem você querer mais... saboreie cada mordida!
+                    </p>
+                </div>
+                <div class="bebidas">
+                    <a href="/bebidas.html"><img class="imagem2" src="/img/bebidas.jpg" class="card-img-top" alt="Bebidas Disponiveis"></a>
+                    <h3 class="titulo-opcao">Bebidas Disponiveis</h3>
+                    <p class="texto-imagens">Para acompanhar nossos lanches irresistíveis, escolha as bebidas refrescantes do
+                        D.burguer e eleve sua experiência de sabor a outro nível!
+                    </p>
+                </div>
+                <div class="sobremesas">
+                    <a href="/sobremesas.html"><img class="imagem3" src="/img/Sobremesas.jpg" class="card-img-top" alt="Sobremesas Disponiveis"></a>
+                    <h3 class="titulo-opcao">Tipos de Sobremesas</h3>
+                    <p class="texto-imagens">Finalize sua refeição com chave de ouro! No D.burguer, nossas sobremesas são o toque doce
+                        que você precisa para completar o momento perfeito.
+                    </p>
+                </div>
+            </div>
+            <div class="rodape">
+                <div class="rodape-texto">
+                    <h3>Venha Saborear !</h3>
+                    <p class="texto-home">Conheça o D.Burguer, a mais nova hamburgueria de Araraquara!<br>
+                        <br>
+                         Nossos hambúrgueres, feitos com ingredientes 
+                        frescos e de alta qualidade, garantem sabor em cada mordida. Temos opções para todos os gostos, 
+                        incluindo vegetarianos. Venha viver uma experiência gastronômica única com o atendimento que você merece. 
+                        <br>
+                        <br>
+                        Não perca tempo, estamos te esperando!
+                    </p>
+                </div>
+                <div class="video-burguer">
+                    <div class="col-lg-6">
+                        <iframe class="videoBurger" width="100%" height="325" src="/img/lanche.mp4" title="Burguers ON" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <!--Caixa de texto-->
+    <!-- Morcegos voando na tela para o Halloween -->
+<div class="bat"></div>
+<div class="bat"></div>
+<div class="bat"></div>
+<div class="bat"></div>
+<div class="bat"></div>
 
-  <div class="col-md-6">
-    <div class="text-box">
-      <h2>Os Melhores Lanches</h2>
-    <hr Class="line1">
-      <p>
-        Venha experimentar nossos lanches especiais! Feitos com ingredientes frescos e preparados
-        com muito carinho para proporcionar a melhor experiência gastronômica. 
-        <br>
-        <br>
-        No D.Burguer, você encontra o combo perfeito! Saboreie nossos lanches irresistíveis, refresque-se com
-        bebidas geladas e finalize com nossas sobremesas deliciosas. Tudo pensado para uma experiência completa e cheia
-        de sabor!
-      </p>
-      <button class="btn btn-primary">Saiba Mais</button>
-    </div>
-  </div>
-  </div>
-  
-  <!--Colocando imagens com conteudo e modo de acesso-->
-  <div id="demo" class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
-    <div class="col">
-      <div class="card">
-        <a href="/lanches.html">
-          <img src="/img/lanche3.jpg" class="card-img-top" alt="Lanches Disponiveis">
-          <div class="card-body">
-            <h5 class="card-title">Tipos de Lanches</h5>
-        </a>
-        <p class="card-text">Descubra o sabor irresistível do D.Burguer e transforme sua fome em prazer com lanches
-          que fazem você querer mais... saboreie cada mordida!</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <a href="/bebidas.html">
-        <img src="/img/bebidas.jpg" class="card-img-top" alt="Bebidas Disponiveis">
-        <div class="card-body">
-          <h5 class="card-title">Bebidas Disponiveis</h5>
-      </a>
-      <p class="card-text">Para acompanhar nossos lanches irresistíveis, escolha as bebidas refrescantes do
-        D.burguer e eleve sua experiência de sabor a outro nível!</p>
-    </div>
-  </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <a href="/sobremesas.html">
-        <img src="/img/Sobremesas.jpg" class="card-img-top" alt="Sobremesas Disponiveis">
-        <div class="card-body">
-          <h5 class="card-title">Tipos de Sobremesas</h5>
-      </a>
-      <p class="card-text">Finalize sua refeição com chave de ouro! No D.burguer, nossas sobremesas são o toque doce
-        que você precisa para completar o momento perfeito.</p>
-    </div>
-  </div>
-  </div>
-  </div>
-  <br>
-  <!--caixa de texto-->
-  <div class="container2">
-    <div class="col-lg-6">
-      <h2 class="titleBoxVideo">Os Melhores lanches a sua espera...</h2>
-      <br>
-      <p class="pVideo">Conheça o D.Burguer, a mais nova hamburgueria de Araraquara!<br>
-        <br>
-        Venha saborear nossos deliciosos e suculentos hambúrgueres, preparados com ingredientes frescos e de alta
-        qualidade, garantindo uma explosão de sabor a cada mordida. Seja você um amante de carne ou prefere opções
-        vegetarianas, temos algo especial para todos os gostos!<br>
-        <br>
-        Junte-se a nós para uma experiência gastronômica incrível e venha conhecer o que o D.Burguer tem de melhor.
-        Estamos prontos para te receber com aquele atendimento que você merece!<br>
-        <br>
-        Não perca tempo, estamos te esperando!
-      </p>
-    </div>
-    <!--colocando video-->
-    <section class="videoBurguer">
-      <div class="col-lg-6">
-        <iframe width="100%" height="325" src="/img/lanche.mp4" title="Burguers ON" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </section>
-  </div>
-
+<!-- GIF da aranha descendo do topo -->
+<div class="spider"></div>
 
 
 
 </body>
-
 </html>
